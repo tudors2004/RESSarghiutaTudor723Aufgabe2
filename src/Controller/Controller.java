@@ -52,5 +52,17 @@ public class Controller {
         character.getProducts().add(product);
     }
 
+    /**
+     * This method prints all the characters from a specific region
+     * @param region the region of the characters
+     */
+    public void getCharactersByRegion(String region){
+        List<Characters> characters = charactersRepository.getAllCharacters();
+        for (Characters character : characters) {
+            if (character.getRegion().equals(region)) {
+                System.out.println(character.getName());
+            }
+        }
+    }
 
 }

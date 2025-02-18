@@ -67,6 +67,7 @@ public class Main {
             System.out.println("10. Get All Products");
             System.out.println("11. Get Product By Name");
             System.out.println("12. Add Product To Character");
+            System.out.println("13. Filter Characters By Region");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
@@ -156,6 +157,11 @@ public class Main {
                     System.out.print("Enter product name: ");
                     String productName = scanner.nextLine();
                     controller.addProductToCharacter(characterName, productName);
+                    break;
+                case 13:
+                    System.out.print("Enter region: ");
+                    region = scanner.nextLine();
+                    controller.getCharactersByRegion(region);
                     break;
                 case 0:
                     System.exit(0);
