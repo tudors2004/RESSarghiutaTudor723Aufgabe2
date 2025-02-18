@@ -3,6 +3,8 @@ import Model.Characters;
 import Model.Products;
 import Repository.CharactersRepository;
 import Repository.ProductsRepository;
+
+import java.util.Comparator;
 import java.util.List;
 public class Controller {
     private CharactersRepository charactersRepository;
@@ -77,6 +79,23 @@ public class Controller {
                     break;
                 }
             }
+        }
+    }
+    /**
+     * This method sorts the products of a character by price
+     * @param characterName the name of the character
+     * @param sortType the type of sorting
+     */
+    public void sortProductsByPrice(String characterName, String sortType){
+        Characters character = charactersRepository.getCharacterByName(characterName);
+        List<Products> products = character.getProducts();
+        if (sortType.equals("ascending")) {
+            products.sort((product1, product2) -> Double.compare(product2.getPrice(), product1.getPrice()));
+        } else {
+            products.sort(Comparator.comparingDouble(Products::getPrice));
+        }
+        for (Products product : products) {
+            System.out.println(product.getName() + " - " + product.getPrice());
         }
     }
 

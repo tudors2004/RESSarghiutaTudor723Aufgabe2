@@ -25,6 +25,7 @@ public class Main {
             System.out.println("12. Add Product To Character");
             System.out.println("13. Filter Characters By Region");
             System.out.println("14. Filter Characters By Product's Universe");
+            System.out.println("15. Sort the Character's Products by Price");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
@@ -124,6 +125,13 @@ public class Main {
                     System.out.print("Enter universe: ");
                     universe = scanner.nextLine();
                     controller.getCharactersByProductUniverse(universe);
+                    break;
+                case 15:
+                    System.out.print("Enter character name: ");
+                    name = scanner.nextLine();
+                    System.out.println("Enter the sorting order (asc/desc): ");
+                    String sortType = scanner.nextLine();
+                    controller.sortProductsByPrice(name, sortType);
                     break;
                 case 0:
                     System.exit(0);
