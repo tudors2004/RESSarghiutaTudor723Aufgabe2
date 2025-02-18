@@ -10,6 +10,51 @@ public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller(new CharactersRepository(), new ProductsRepository());
         Scanner scanner = new Scanner(System.in);
+        Products product1 = new Products("Mjolnir",500.0, "Asgard");
+        Products product2 = new Products("Vibranium-Schild", 700.0, "Wakanda");
+        Products product3 = new Products("Infinity Gauntlet", 10000.0, "Titan");
+        Products product4 = new Products("Web-Shooter", 250.0, "Terra");
+        Products product5 = new Products("Arc Reactor", 1500.0, "Terra");
+        Products product6 = new Products("Norn Stones", 1200.0, "Asgard");
+        Products product7 = new Products("Quantum Suit", 3000.0, "Terra");
+        Products product8 = new Products("X-Gene Serum", 850.0, "X-Mansion");
+        Products product9 = new Products("Cosmic Cube", 9000.0, "Multiverse");
+        Products product10 = new Products("Darkhold", 2000.0, "Multiverse");
+        Characters character1 = new Characters(1, "Thor", "Asgard");
+        Characters character2 = new Characters(2, "Black Panther", "Wakanda");
+        Characters character3 = new Characters(3, "Iron Man", "Terra");
+        Characters character4 = new Characters(4, "Spider-Man", "Terra");
+        Characters character5 = new Characters(5, "Doctor Strange", "Multiverse");
+        character1.getProducts().add(product1);
+        character1.getProducts().add(product6);
+        character1.getProducts().add(product9);
+        character2.getProducts().add(product2);
+        character2.getProducts().add(product8);
+        character3.getProducts().add(product5);
+        character3.getProducts().add(product6);
+        character3.getProducts().add(product4);
+        character4.getProducts().add(product4);
+        character4.getProducts().add(product9);
+        character5.getProducts().add(product10);
+        character5.getProducts().add(product9);
+        character5.getProducts().add(product3);
+
+        controller.addCharacter(character1);
+        controller.addCharacter(character2);
+        controller.addCharacter(character3);
+        controller.addCharacter(character4);
+        controller.addCharacter(character5);
+        controller.addProduct(product1);
+        controller.addProduct(product2);
+        controller.addProduct(product3);
+        controller.addProduct(product4);
+        controller.addProduct(product5);
+        controller.addProduct(product6);
+        controller.addProduct(product7);
+        controller.addProduct(product8);
+        controller.addProduct(product9);
+        controller.addProduct(product10);
+
         while (true) {
             System.out.println("1. Add Character");
             System.out.println("2. Delete Character");
