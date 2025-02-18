@@ -57,4 +57,8 @@ public class Characters {
     public void setProducts(List<Products> products) {
         this.products = products;
     }
+
+    public void kaufeProdukt(Products products) {
+        this.products.add(products);
+    }
 }

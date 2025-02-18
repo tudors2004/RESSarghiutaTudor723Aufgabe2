@@ -44,3 +44,49 @@ public static void main(String[] args) {
         charaktere.add(c4);
         charaktere.add(c5);
     }
+
+
+    ////        // Initialisierung der Produkte
+
+      //        List<Products> produkte = new ArrayList<>();
+      //        produkte.add(new Products("Mjolnir", 500.0, "Asgard"));
+      //        produkte.add(new Products("Vibranium-Schild", 700.0, "Wakanda"));
+      //        produkte.add(new Products("Infinity Gauntlet", 10000.0, "Titan"));
+      //        produkte.add(new Products("Web-Shooter", 250.0, "Terra"));
+      //        produkte.add(new Products("Arc-Reaktor", 1500.0, "Terra"));
+      //        produkte.add(new Products("Norn Stones", 1200.0, "Asgard"));
+      //        produkte.add(new Products("Quantum Suit", 3000.0, "Terra"));
+      //        produkte.add(new Products("X-Gene Serum", 850.0, "X-Mansion"));
+      //        produkte.add(new Products("Cosmic Cube", 9000.0, "Multiverse"));
+      //        produkte.add(new Products("Darkhold", 2000.0, "Multiverse"));
+      //
+      //        // Initialisierung der Charaktere
+      //        List<Characters> charaktere = new ArrayList<>();
+      //
+      //        Characters c1 = new Characters(1, "Thor", "Asgard");
+      //        c1.kaufeProdukt(produkte.get(0)); // Mjolnir
+      //        c1.kaufeProdukt(produkte.get(5)); // Norn Stones
+      //        c1.kaufeProdukt(produkte.get(9)); // Darkhold
+      //
+      //        Characters c2 = new Characters(2, "Black Panther", "Wakanda");
+      //        c2.kaufeProdukt(produkte.get(1)); // Vibranium-Schild
+      //        c2.kaufeProdukt(produkte.get(7)); // X-Gene Serum
+      //
+      //        Characters c3 = new Characters(3, "Iron Man", "Terra");
+      //        c3.kaufeProdukt(produkte.get(4)); // Arc-Reaktor
+      //        c3.kaufeProdukt(produkte.get(6)); // Quantum Suit
+      //        c3.kaufeProdukt(produkte.get(3)); // Web-Shooter
+      //
+      //        Characters c4 = new Characters(4, "Spider-Man", "Terra");
+      //        c4.kaufeProdukt(produkte.get(3)); // Web-Shooter
+      //        c4.kaufeProdukt(produkte.get(8)); // Cosmic Cube
+      //
+      //        Characters c5 = new Characters(5, "Doctor Strange", "Multiverse");
+      //        c5.kaufeProdukt(produkte.get(9)); // Darkhold
+      //        c5.kaufeProdukt(produkte.get(8)); // Cosmic Cube
+      //        c5.kaufeProdukt(produkte.get(2)); // Infinity Gauntlet
+      //        charaktere.add(c1);
+      //        charaktere.add(c2);
+      //        charaktere.add(c3);
+      //        charaktere.add(c4);
+      //        charaktere.add(c5);

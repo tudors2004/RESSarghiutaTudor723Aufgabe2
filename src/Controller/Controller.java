@@ -64,5 +64,20 @@ public class Controller {
             }
         }
     }
+    /**
+     * This method prints all the characters that have products from a specific universe
+     * @param universe the universe of the characters
+     */
+    public void getCharactersByProductUniverse(String universe){
+        List<Characters> characters = charactersRepository.getAllCharacters();
+        for (Characters character : characters) {
+            for (Products product : character.getProducts()) {
+                if (product.getUniverse().equals(universe)) {
+                    System.out.println(character.getName());
+                    break;
+                }
+            }
+        }
+    }
 
 }
